@@ -9,6 +9,9 @@ jobs:
 #This workflow will be able to edit this issue, but it won't be able to explore the code of repo or manipulate actions and other things
     permissions:
       issues: write
+#Only this permission is granted, all other permissions are not granted - default changes!
+#We simply add additional layer of protection
+#Any actions that I intend not to do - I blocked by using permissions 
     runs-on: ubuntu-latest
     steps:
       - name: Assign label
@@ -22,3 +25,7 @@ jobs:
               "labels": ["bug"]
             }' \
           --fail
+
+
+#As we can see in Issues - my issues Yet another bug assigned label (a label was added a bug in a red color).
+#All workflows passess successfully
