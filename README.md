@@ -1,1 +1,3 @@
-# GitHubActions_Training_part8
+# Example Repo
+
+This is a super simple example repository!
