@@ -21,3 +21,4 @@ jobs:
           fi
 
 #It is necessary to either  use environment variables or actions where you store user entered data to prevent script injections
+#After creating issue, it does not echo your secrets
