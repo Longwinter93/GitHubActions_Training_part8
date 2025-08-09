@@ -5,6 +5,10 @@ on:
       - opened
 jobs:
   assign-label:
+#We add permission on a job level
+#This workflow will be able to edit this issue, but it won't be able to explore the code of repo or manipulate actions and other things
+    permissions:
+      issues: write
     runs-on: ubuntu-latest
     steps:
       - name: Assign label
