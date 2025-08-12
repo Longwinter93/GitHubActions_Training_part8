@@ -29,12 +29,14 @@ jobs:
 
 #As we can see in Issues - my issues Yet another bug assigned label (a label was added a bug in a red color).
 #All workflows passess successfully
+
 #A GITHUB_TOKEN permission includes only permission to read issues (line 11)
 #It is reason why when we open Issues in GitHub, this workflow fails
 #We need to provide this token (GITHUB_TOKEN) with appropriate permissions.
 #Thanks to this, this token is attached to do succeed.
+
 #We use always secrets.GITHUB_TOKEN, but it is the first time we have seen it,
-#because we actually send a request to GitHub's API manually.
+#because we actually send a request to GitHub's API manually for example in a uses key.
 #In addition, all actions are used GitHub's API under the hood and use this token secret (lines 22).
 #They have been regulated with permission set by us (lines 9).
 #In our case we have permissions only read. It is reason why this workflows fail when we open Issues.
