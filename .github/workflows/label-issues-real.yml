@@ -8,7 +8,7 @@ jobs:
 #We add permission on a job level
 #This workflow will be able to edit this issue, but it won't be able to explore the code of repo or manipulate actions and other things
     permissions:
-      issues: write
+      issues: read
 #Only this permission is granted, all other permissions are not granted - default changes!
 #We simply add additional layer of protection
 #Any actions that I intend not to do - I blocked by using permissions 
